@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Heist Inn</title>
+
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="/">
+                <img src="https://heistinn.com/static/image/logo.png" alt="">
+            </a>
+            <div class="navContent">
+                <ul>
+                    <li class="buttons button1">
+                        <a href="/">HOME</a>
+                    </li>
+                    <li class="buttons button2">
+                        <a href="/">MENU</a>
+                    </li>
+                    <li class="buttons button3">
+                        <a aria-current="page" href="index.html#book-a-table">BOOK A TABLE</a>
+                    </li>
+                    <li class="buttons button4">
+                        <a href="/">ABOUT US</a>
+                    </li>
+                    <li class="buttons button5">
+                        <a href="/">CONTACT</a>
+                    </li>
+                    <li id="button-animation" class="buttons button6 ">
+                        <a href="tel:+919709979000">
+                            <img class="call-btn" src="svg/call.svg" alt="">
+                            +919709979000
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- about section  -->
+    <section class="about">
+        <div class="about-heading"><div class="about-us">CONTACT <span class="highlight">US</span></div> </div>
+        <div class="contact-card">
+            <section id="contact-us">
+
+                <div class="contact-table" >
+                    <div class="contact-table-content" onsubmit="validateForm(event)">
+                        <div>
+                            <form class="contact-table-form" onsubmit="validateForm(event)">
+                                <div class="contact-card-heading">
+                                    GET IN TOUCH
+                                </div>
+                                <div class="fName">
+                                    <label class="form-label" for="name">FULL NAME</label><br>
+                                    <input type="TEXT" id="form-input" class="grey-placeholder" placeholder="ENTER YOUR FULL NAME">
+                                </div>
+    
+                                <div class="number-and-reason">
+                                    <div class="form-date">
+                                        <label class="form-label" for="date">PHONE</label>
+                                        <input type="tel" id="contact-number" class="grey-placeholder" name="phone"
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ENETER YOUR NUMBER">
+                                    </div>
+                                    <div class="reason-options">
+                                        <label class="form-label" for="options">REASON</label>
+                                        <select id="options" name="options">
+                                            <option value="option1" selected>FEEDBACK</option>
+                                            <option value="option2">FOOD REVIEW</option>
+                                            <option value="option3">TESTIMONIAL</option>
+                                            <option value="option4">QUERY</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="guests contact-email">
+                                    <label class="form-label" for="num">EMAIL</label><br>
+                                    <input type="email" id="form-input" class="grey-placeholder" placeholder="ENTER YOUR EMAIL">
+                                </div>
+                                <div class="msg">
+                                    <label class="form-label" for="msg">YOUR MESSAGE</label><br>
+                                    <textarea name="message" id="form-msg" placeholder="ENTER YOUR MESSAGE"></textarea>
+                                    </div>
+                                </div>
+                                <div class="send-request-button">
+                                    <button id="button-animation" class="send-request" type="submit">
+                                        <img src="svg/paper-plane.svg" alt class="send-request-image">
+                                        SUBMIT
+                                    </button>           
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="">
+                            <img src="https://heistinn.com/static/image/contact-us.svg" alt class="contact-table-image">
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.2741073422293!2d87.47883120323868!3d25.7801614928942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9d79e3ca443%3A0xa63e71093c3d6f9c!2sHeistInn!5e0!3m2!1sen!2sin!4v1712856392629!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="footer-section">
+        <div class="footer-upper-section">
+
+            <div class="follow">
+                <div class="logo"><img src="https://heistinn.com/static/image/logo.png" alt class="footer-logo"></div>
+                <div class="follow-description">Step into a fantasy world with flavorful food and top notch services.</div>
+                <div class="follow-buttons">
+                    <button class="mobile-btn">
+                        <a href="tel:+919709979000"><img src="svg/mobile.svg" alt class="mobile-svg"></a>
+                    </button>
+                    <button class="email-btn">
+                        <a href="mailto:business@heistinn.com">
+                            <img src="svg/email.svg" alt class="email-svg">
+                        </a>
+                    </button>
+                    <button class="facebook-btn">
+                        <a href="https://www.facebook.com/heistinn" target="_blank">
+                            <img src="svg/facebook.svg" alt class="facebook-svg">
+                        </a>
+                    </button>
+                    <button class="instagram-btn">
+                        <a href="https://www.instagram.com/heist_inn/" target="_blank">
+                            <img src="svg/instagram.svg" alt class="instagram-svg">
+                        </a>
+                    </button>
+                    <button class="whatsapp-btn">
+                        <a href="#">
+                            <img src="svg/whatsapp.svg" alt class="whatsapp-svg">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="useful-links">
+                <div class="useful-links-heaading">USEFUL <span class="highlight">LINKS</span></div>
+                <div class="useful-links-a">
+                    <a href="/" class="home-link">HOME</a>
+                    <a href="/about.html" class="about-link">ABOUT US</a>
+                    <a href="/menu.html" class="menu-link">OUR MENU</a>
+                    <a href="/.book-table" class="book-table-link">BOOK A TABLE</a>
+                </div>
+            </div>
+            <div class="our-services">
+                <div class="our-services-heading">OUR <span class="highlight">SERVICES</span></div>
+                <div class="our-services-a">
+                    <a href="/" class="lounge-facility">LOUNGE FACILITY</a>
+                    <a href="/" class="bookings">BOOKINGS FOR TABLES</a>
+                    <a href="/" class="availability">AVAILABILITY OF TABLES</a>
+                </div>
+            </div>
+            <div class="contact-us">
+                <div class="contact-us-heading">CONTACT <span class="highlight">US</span></div>
+                <div class="contact-us-a">
+                    <a href="https://goo.gl/maps/2ruJN7r8X4d3abS59" class="address">
+                        <img src="svg/location.svg" alt="">
+                        FORD COMPANY RADIO STATION CHOWK, PURNIA, BIHAR
+                    </a>
+                    <a href="/" class="bookings">
+                        <img src="svg/black-mobile.svg" alt="">
+                        +919709979000
+                    </a>
+                    <a href="mailto:business@heistinn.com" class="contact-email">
+                        <img src="svg/black-email.svg" alt="">
+                        BUSINESS@HEISTINN.COM
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="footer-bottom-section">
+            <div class="copyright">© Copyright 2022 <a href="index.html">Heistinn.com</a> All rights reserved</div>
+            <div class="developer">Developed by <a href="mailto:shahilrishav@gmail.com">Rishav Shahil</a> | <a href="mailto:marketing.support@watchdroid.in">WatchDroid</a></div>
+        </div>
+    </footer>
+</body>
+
+<!-- Swiper JS -->
+<script src="swiper-bundle.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</html>
